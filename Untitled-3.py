@@ -1,3 +1,3 @@
 print ("Hello World")
 
-A= 5
+A=5
