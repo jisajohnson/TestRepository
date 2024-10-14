@@ -18,5 +18,6 @@ print ("Hello"+"World!") #Concatenating Strings Inside Print
 print (True)
 print (False) #Print Boolean Values
 print (1.2e3) #Printing Exponential Notation (Prints 1200.0)
-print ("""This is a multiline print statement""") #Print Multiline Text Using Triple Quotes
+print ("""This is a multiline
+print statement""") #Print Multiline Text Using Triple Quotes
 print ("This is a backslash:\\") #Print Using Escaped Backslash
