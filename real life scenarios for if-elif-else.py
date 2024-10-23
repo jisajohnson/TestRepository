@@ -24,9 +24,45 @@ else:
 amount = float(input("Enter the withdrawal amount:"))
 
 if amount >= 1000:
-    if amount == 1000:
-        print("Thank you for being our special customer and Please come again. The amount you have withdrawn is £",amount)
+    print("Thank you for being our special customer and You will be upgraded to VIP. The amount you have withdrawn is £",amount)
 elif amount <= 100:
     print("WARNING: You have insufficient balance")
 else:
     print ("The amount for withdrawal: £",amount)
+
+#4. Weather and Outfit Selection
+weather = int(input("Enter the weather:"))
+rainy = input("Is it raining?(Yes/No)")
+cloudy = input("Is it cloudy?(Yes/No)")
+if weather > 25:
+    print ("Wear shorts and sunglasses")
+elif rainy == "Yes":
+    print ("Carry an ummbrella")
+elif weather < 10:
+    print ("Wear a jacket")
+elif cloudy == "Yes":
+    print ("Wear light clothes")
+else:
+    print ("Wear casuals")
+
+#5. Password Validation
+username = "SystemOS"
+password = str(input("Enter the password:"))
+print(username)
+if len(password) > 8 and len(password) < 16:
+    if password == str and password == int:
+        print("This Password is valid")
+elif password < 8:
+    print ("Minimun 8 characters")
+elif password > 16:
+    print ("Maximum 16 characters")
+elif password != int:
+    print ("At least one number")
+elif password != str:
+    print ("At least one character")
+else:            
+    print ("Error! The password isn't valid")
+    print ("Minimun 8 characters")
+    print ("Maximum 16 characters")
+    print ("At least one number")
+    print ("At least one character")
