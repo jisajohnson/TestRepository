@@ -49,3 +49,40 @@ print(f'The value is {val+1}.') #formated expressions
 
 num = 123.456789
 print (f'{num:.2f}')
+
+num = 1000000.00
+print(f'{num:,.2f}')
+
+discount = 0.5
+print(f'{discount:.0%}') #formatted output with f-strings
+
+num = 123456789
+print(f'{num:,d}')
+
+num = 12345.6789
+print(f'{num:.2e}')
+
+num = 12345.6789
+print(f'The number is {num:12,.2f}') #specifying a minimum field width
+
+print(f'{num:<20.2f}')
+print(f'{num:>20.2f}')
+print(f'{num:^20.2f}') #aligning values within a field
+
+number = 12345.6789
+print(f'{number:^10,.2f}')
+
+#import turtle
+#turtle.forward(100) #moves turtle forward
+#turtle.mainloop() #you can try turtle.done() as well
+
+#import turtle
+#turtle.backward(100)
+#turtle.done()
+
+import turtle
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.done()
+

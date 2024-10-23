@@ -7,4 +7,3 @@ print(x,y,z)
 
 variable=input("prompt")
 
-name=input('What is your name?')

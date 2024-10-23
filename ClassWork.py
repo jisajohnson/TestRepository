@@ -1,6 +1,5 @@
-name = input('What is your name? ')
-
-number = int(input('Enter a number: '))
-
-score = float(input('Enter your score: '))
-
+import turtle
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.done()
