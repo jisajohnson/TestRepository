@@ -1,3 +1,4 @@
+#1. Restaurant Order Discount
 totalamount = int(input("Enter the total bill amount:"))
 discount = 0.1
 
@@ -7,6 +8,7 @@ if totalamount > 50:
 else:
     print("Total amount:", totalamount)
 
+#2. Movie Ticket Price
 age = int(input("Enter your age:"))
 
 if age <= 12:
@@ -18,11 +20,13 @@ elif age <= 64:
 else:
     print ("The ticket price is £6")
 
+#3. Bank Withdrawal
 amount = float(input("Enter the withdrawal amount:"))
 
 if amount >= 1000:
-    print("Thank you for being our special customer and Please come again. The amount you have withdrawn",amount)
+    if amount == 1000:
+        print("Thank you for being our special customer and Please come again. The amount you have withdrawn is £",amount)
 elif amount <= 100:
     print("WARNING: You have insufficient balance")
 else:
-    print ("The amount for withdrawal:",amount)
+    print ("The amount for withdrawal: £",amount)
