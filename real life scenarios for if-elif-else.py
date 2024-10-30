@@ -21,14 +21,15 @@ else:
     print ("The ticket price is £6")
 
 #3. Bank Withdrawal
-amount = float(input("Enter the withdrawal amount:"))
+accountbalance = float(input("Enter the account balance:"))
+withdrawalamount = float(input("Enter the withdrawal amount:"))
 
-if amount >= 1000:
-    print("Thank you for being our special customer and You will be upgraded to VIP. The amount you have withdrawn is £",amount)
-elif amount <= 100:
+if accountbalance >= 1000 and withdrawalamount >= 1000:
+    print("Thank you for being our special customer and You will be upgraded to VIP. The amount you have withdrawn is £", withdrawalamount)
+elif accountbalance <= 100 and withdrawalamount <= 100:
     print("WARNING: You have insufficient balance")
 else:
-    print ("The amount for withdrawal: £",amount)
+    print ("The amount for withdrawal is £",withdrawalamount)
 
 #4. Weather and Outfit Selection
 weather = int(input("Enter the weather:"))
@@ -46,12 +47,11 @@ else:
     print ("Wear casuals")
 
 #5. Password Validation
-username = "SystemOS"
 password = str(input("Enter the password:"))
-print(username)
+
 if len(password) > 8 and len(password) < 16:
     if password == str and password == int:
-        print("This Password is valid")
+        print ("This Password is valid")
 elif password < 8:
     print ("Minimun 8 characters")
 elif password > 16:
